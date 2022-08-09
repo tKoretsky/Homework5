@@ -3,7 +3,7 @@ package Task2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyList<T extends Comparable> {
+public class MyList <T extends Comparable<T>> {
 
     List<T> arraylist = new ArrayList<>();
 

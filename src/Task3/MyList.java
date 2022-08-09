@@ -2,12 +2,14 @@ package Task3;
 
 import java.util.Arrays;
 
-public class MyList <T extends Comparable> {
+public class MyList <T extends Comparable <T>> {
     private T[]array;
 
     public MyList(T[] _array){
         array=_array;
     }
+
+
     public T max() {
         T max = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -17,7 +19,6 @@ public class MyList <T extends Comparable> {
         }
         return max;
     }
-
     public T min() {
         T min = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -27,7 +28,6 @@ public class MyList <T extends Comparable> {
         }
         return min;
     }
-
     @Override
     public String toString() {
         return "MyList{" +
